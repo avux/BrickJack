@@ -68,5 +68,4 @@ BrickJack scans UNO cards with an EV3-mounted light sensor, recognizes the card 
 - `LICENSE` — project license.
 - `README.md` — this file (place at repo root).
 
-# BrickJack
-Overleaf: https://www.overleaf.com/1273331577npttwjxrsbsk
+[Overleaf](https://www.overleaf.com/read/rxqjjrvwmdwv#60b5fc)
