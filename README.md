@@ -1,3 +1,11 @@
+## Overview
+
+BrickJack is a Java-based robotics project that uses a Lego Mindstorms EV3 brick to automate and moderate a Blackjack game played with UNO cards. The EV3 controls a mechanical card dispenser and a cartesian gantry carrying a brightness sensor that scans each card; raw pixel data is streamed over a socket connection to a PC, which processes and OCR-recognizes the card value using Tess4J (a Java wrapper for Tesseract) before returning the result to the EV3.
+
+The project is structured in two versions (`Brickjack` and `Brickjack v.2`) plus a standalone `BrickOCR` image-processing module. The EV3-side code (written with the leJOS library) handles motors, sensors, game logic, and network communication via `MindClient`/`ConnectionManager`, while the PC-side `ServerPC` and `ArrayToIntConverter` handle image reconstruction, thresholding, and digit recognition. A `numbers/` directory contains sample card scan images used for OCR training and testing. The project was developed in 2021 as part of the Lego Mindstorms Praktikum.
+
+---
+
 ### BrickJack — Lego Mindstorms Blackjack robot
 
 BrickJack is a Lego Mindstorms EV3 robot that **automates and moderates a variation of Blackjack using UNO cards**.  
